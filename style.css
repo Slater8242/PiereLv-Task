@@ -202,8 +202,8 @@ h3{
     border-radius: 6px;
     background-color: #c4c4c4;
     margin-left: 20px;
-    font-size: 18px;
-    line-height: 22px;
+    color: black;
+    font-weight: normal;
 }
 
 ::placeholder{
@@ -231,6 +231,8 @@ h3{
     width: 612px;
     height: 232px;
     resize: none;
+    color:black;
+    font-weight: 400;
 }
 /* custom checkbox */
 #container {
