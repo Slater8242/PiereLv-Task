@@ -1,0 +1,251 @@
+$fontColor:#2F4858;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin headerFont($fontSize,$lineHeight){
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+
+@mixin textFont ($fontSize,$fontHeight){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fontSize;
+    line-height: $fontHeight;
+}
+
+@mixin tornPaper{
+    content: "";
+    position: absolute;
+    height: 51px;
+    width: 101%;
+    background: url("../image/ripped.png") no-repeat center ;
+    z-index: 5;
+}
+
+@mixin commentArrow ($degree){
+    background-image: url(../image/);
+    border: solid $fontColor;
+    border-width: 0 3px 3px 0;
+    transform: rotate($degree);
+    width: 23px;
+    height: 23px;
+}
+
+@mixin commentArrowLocation ($left){
+    position: absolute;
+    top: 245px;
+    left: $left;
+    width:auto;
+}
+
+@mixin bankAndInfo{
+    #firstWord{
+        @include textFont(24px,29px);
+        margin-bottom: 20px;
+    }
+    
+    p{
+        margin-bottom:10px;
+    }
+}
+
+#header {
+    position: relative;
+    height: 120px;
+    #logoImage{
+        position: absolute;
+        left: 62px/1366px * 100%;
+    }
+
+    #headerMenu {
+        position: absolute;
+        left: 305px/1366px * 100%;
+        top: 50px;
+        a{
+            @include textFont(18px,22px);
+            font-weight: 500;
+            margin-right: 35px;
+            text-decoration: none;
+            color: #000;
+            &:hover{
+                font-weight:600;
+                border-bottom: 3px solid #FFA800
+            }
+        }
+        #selectorButton{
+            @include textFont(18px,22px);
+            font-weight: 500;
+            margin-left: 15px;
+            background: transparent;
+            border: none;
+            padding: 10px;
+        }
+    }
+}
+
+#idea{
+    h1{
+        @include headerFont(48px,71px);
+        margin-top: 85px;
+        text-align: center;
+        color:$fontColor;
+    }
+    p{
+        @include textFont(18px,22px);
+        text-align: center;
+        margin: 60px auto auto auto;
+        width: 606px;
+    }
+}
+
+#juris{
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    justify-content:center;
+    &:before {
+        @include tornPaper;
+        transform: rotate(180deg);
+    }
+    &:after {
+        @include tornPaper;
+        top: 651px;
+    }
+    p{
+        position: absolute;
+        top: 508px;
+        @include headerFont(24px,36px);
+        color: #fff;
+        text-align: center;
+        width: 818px;
+    }
+}
+
+#comments{
+    position: relative;
+    width: 602px/1366px * 100%;
+    left: 50%;
+    transform: translate(-50%,0);
+    h1{
+        @include headerFont(24px,36px);
+        margin-bottom: 10px;
+    }
+
+    p{
+        @include textFont(18px,22px);
+        margin-bottom:30px;
+    }
+
+    .message{
+        @include textFont(24px,29px);
+        font-style: italic;
+    }
+
+    .carousel{
+        position: absolute;
+        top: 150px;
+        left: 380px/1366px * 100%;
+    }
+    .carousel-control-prev , .carousel-control-next{
+        background:transparent;
+        border: none;
+    }
+    .carousel-control-prev-icon{
+        @include commentArrow(135deg); 
+    }
+    .carousel-control-next-icon{
+        @include commentArrow(-45deg);
+    }
+
+    .carousel-control-prev{
+        @include commentArrowLocation(0);
+    }
+    
+    .carousel-control-next{
+        @include commentArrowLocation(45px);
+    }
+}
+    
+#footer {
+    position: relative;
+    top: 566px;
+    p{
+        color: #fff;
+    }
+    li{
+        list-style: none;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url(../footerImages/footerBg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 376px;
+        z-index: -1;
+    }
+
+    #footerLogo,#siteMap,#bankDetails,#contactDetails{
+        position: relative;
+        top: 75px;
+    }
+
+    #footerLogo{
+        left: 62px/1366px * 100%;
+        #rightsReserved{
+            @include textFont(14px,17px);
+            position : relative;
+            top: 70px;
+            width: 182px;
+        }
+    }
+
+    #siteMap{
+        @include textFont(18px,22px);
+        
+        a{
+        color: #fff;
+        text-decoration: none;
+        }
+
+        li{
+            margin-bottom:21px;
+        }
+    }
+
+    #bankDetails{
+        @include textFont(18px,22px);
+        @include bankAndInfo;
+    }
+
+    #contactDetails{
+        @include textFont(18px,22px);
+        @include bankAndInfo;
+        text-align:right;
+        right:62px/1366px * 100%;
+    
+        #socialMedia{
+            margin-top: 52px;
+            a:first-child:nth-last-child(2){
+                margin-right: 30px;
+            }
+        }
+        #policy{
+            @include textFont(14px,17px);
+            color: #fff;
+            margin-top:50px;
+        }
+    }
+
+}

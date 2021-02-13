@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#header {
+  position: relative;
+  height: 120px;
+}
+
+#header #logoImage {
+  position: absolute;
+  left: 4.5388%;
+}
+
+#header #headerMenu {
+  position: absolute;
+  left: 22.32796%;
+  top: 50px;
+}
+
+#header #headerMenu a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-right: 35px;
+  text-decoration: none;
+  color: #000;
+}
+
+#header #headerMenu a:hover {
+  font-weight: 600;
+  border-bottom: 3px solid #FFA800;
+}
+
+#header #headerMenu #selectorButton {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-left: 15px;
+  background: transparent;
+  border: none;
+  padding: 10px;
+}
+
+#idea h1 {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 71px;
+  margin-top: 85px;
+  text-align: center;
+  color: #2F4858;
+}
+
+#idea p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin: 60px auto auto auto;
+  width: 606px;
+}
+
+#juris {
+  position: relative;
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#juris:before {
+  content: "";
+  position: absolute;
+  height: 51px;
+  width: 101%;
+  background: url("../image/ripped.png") no-repeat center;
+  z-index: 5;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#juris:after {
+  content: "";
+  position: absolute;
+  height: 51px;
+  width: 101%;
+  background: url("../image/ripped.png") no-repeat center;
+  z-index: 5;
+  top: 651px;
+}
+
+#juris p {
+  position: absolute;
+  top: 508px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+  text-align: center;
+  width: 818px;
+}
+
+#comments {
+  position: relative;
+  width: 44.07028%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+#comments h1 {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+#comments p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+#comments .message {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  font-style: italic;
+}
+
+#comments .carousel {
+  position: absolute;
+  top: 150px;
+  left: 27.81845%;
+}
+
+#comments .carousel-control-prev, #comments .carousel-control-next {
+  background: transparent;
+  border: none;
+}
+
+#comments .carousel-control-prev-icon {
+  background-image: url(../image/);
+  border: solid #2F4858;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  width: 23px;
+  height: 23px;
+}
+
+#comments .carousel-control-next-icon {
+  background-image: url(../image/);
+  border: solid #2F4858;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 23px;
+  height: 23px;
+}
+
+#comments .carousel-control-prev {
+  position: absolute;
+  top: 245px;
+  left: 0;
+  width: auto;
+}
+
+#comments .carousel-control-next {
+  position: absolute;
+  top: 245px;
+  left: 45px;
+  width: auto;
+}
+
+#footer {
+  position: relative;
+  top: 566px;
+}
+
+#footer p {
+  color: #fff;
+}
+
+#footer li {
+  list-style: none;
+}
+
+#footer::before {
+  content: "";
+  position: absolute;
+  background-image: url(../footerImages/footerBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 376px;
+  z-index: -1;
+}
+
+#footer #footerLogo, #footer #siteMap, #footer #bankDetails, #footer #contactDetails {
+  position: relative;
+  top: 75px;
+}
+
+#footer #footerLogo {
+  left: 4.5388%;
+}
+
+#footer #footerLogo #rightsReserved {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  position: relative;
+  top: 70px;
+  width: 182px;
+}
+
+#footer #siteMap {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#footer #siteMap a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer #siteMap li {
+  margin-bottom: 21px;
+}
+
+#footer #bankDetails {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#footer #bankDetails #firstWord {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+
+#footer #bankDetails p {
+  margin-bottom: 10px;
+}
+
+#footer #contactDetails {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  right: 4.5388%;
+}
+
+#footer #contactDetails #firstWord {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+
+#footer #contactDetails p {
+  margin-bottom: 10px;
+}
+
+#footer #contactDetails #socialMedia {
+  margin-top: 52px;
+}
+
+#footer #contactDetails #socialMedia a:first-child:nth-last-child(2) {
+  margin-right: 30px;
+}
+
+#footer #contactDetails #policy {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=style.css.map */
